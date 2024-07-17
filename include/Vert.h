@@ -1,5 +1,5 @@
-#ifndef JSONRENDERER2_H
-#define JSONRENDERER2_H
+#ifndef VERT_H
+#define VERT_H
 
 #include <string>
 #include <vector>
@@ -16,9 +16,9 @@
 using namespace ftxui;
 using json = nlohmann::json;
 
-#include "IJsonRenderer.h"
+#include "JsonRenderer.h"
 
-class JsonRenderer2 : public IJsonRenderer {
+class JsonRenderer2 : public JsonRenderer {
 private:
     std::vector<Color> colors = {
         Color::RGB(0, 0, 0),

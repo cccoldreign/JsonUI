@@ -1,7 +1,7 @@
-#ifndef JSONRENDERER1_H
-#define JSONRENDERER1_H
+#ifndef TABLE_H
+#define TABLE_H
 
-#include "IJsonRenderer.h"
+#include "JsonRenderer.h"
 #include <fstream>
 #include <string>
 #include <vector>
@@ -17,7 +17,7 @@
 using namespace ftxui;
 using json = nlohmann::json;
 
-class JsonRenderer1 : public IJsonRenderer {
+class JsonRenderer1 : public JsonRenderer {
     
 private:
     struct Selection {

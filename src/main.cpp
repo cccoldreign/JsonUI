@@ -7,10 +7,10 @@
 #include <ftxui/component/component.hpp>
 #include <ftxui/component/screen_interactive.hpp>
 
-#include "IJsonRenderer.h"
-#include "JsonRenderer1.h"
-#include "JsonRenderer2.h"
-#include "JsonRenderer3.h"
+#include "JsonRenderer.h"
+#include "Table.h"
+#include "Vert.h"
+#include "Navy.h"
 
 #include <nlohmann/json.hpp>
 
@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
     json j;
     file >> j;
 
-    std::unique_ptr<IJsonRenderer> renderer;
+    std::unique_ptr<JsonRenderer> renderer;
     if (flag == "--table") {
         renderer = std::make_unique<JsonRenderer1>();
     } else if (flag == "--vert-c") {

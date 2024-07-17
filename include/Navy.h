@@ -1,5 +1,5 @@
-#ifndef JSONRENDERER3_H
-#define JSONRENDERER3_H
+#ifndef NAVY_H
+#define NAVY_H
 
 #include <string>
 #include <vector>
@@ -16,9 +16,9 @@
 using namespace ftxui;
 using json = nlohmann::json;
 
-#include "IJsonRenderer.h"
+#include "JsonRenderer.h"
 
-class JsonRenderer3 : public IJsonRenderer {
+class JsonRenderer3 : public JsonRenderer {
 public:
 
 

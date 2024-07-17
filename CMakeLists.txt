@@ -41,9 +41,9 @@ endif()
 
 add_executable(GUI 
     src/main.cpp
-    src/JsonRenderer1.cpp
-    src/JsonRenderer2.cpp
-    src/JsonRenderer3.cpp
+    src/Table.cpp
+    src/Vert.cpp
+    src/Navy.cpp
 )
 
 include_directories(include)
